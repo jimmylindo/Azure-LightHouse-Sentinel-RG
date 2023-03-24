@@ -3,32 +3,32 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "mspOfferName": {
-            "value": "Relecloud Managed Services"
+            "value": "Cloudtech Lighthouse RG management"
         },
         "rgName": {
-            "value": "test"
+            "value": "RG-Sentinel-Workspace"
         },
         "mspOfferDescription": {
-            "value": "Relecloud Managed Services"
+            "value": "A service to manage sentinel"
         },
         "managedByTenantId": {
-            "value": "<insert managing tenant id>"
+            "value": "e07830a2-bcbb-4f4a-be65-a327c181f764"
         },
         "authorizations": {
             "value": [
                 { 
-                    "principalId": "00000000-0000-0000-0000-000000000000", 
+                    "principalId": "9757a193-540f-45b6-b409-c2f93675a443", 
                     "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
-                    "principalIdDisplayName": "PIM_Group" 
+                    "principalIdDisplayName": "Cloudtech-Lighthouse-ReadOnly" 
                 }, 
                 { 
-                    "principalId": "00000000-0000-0000-0000-000000000000", 
+                    "principalId": "d404ab5b-c526-437c-8d26-57887ea85c20", 
                     "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46",
-                    "principalIdDisplayName": "PIM_Group" 
+                    "principalIdDisplayName": "Cloudtech-Lighthouse-msp-delete" 
                 },
                 {
-                    "principalId": "00000000-0000-0000-0000-000000000000",
-                    "principalIdDisplayName": "PIM_Group",
+                    "principalId": "d44c0e87-5a8c-4f17-88e4-f5713ecae0d8",
+                    "principalIdDisplayName": "Cloudtech-Lighthouse-Admin",
                     "roleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
                     "delegatedRoleDefinitionIds": [
                         "b24988ac-6180-42a0-ab88-20f7382dd24c",
