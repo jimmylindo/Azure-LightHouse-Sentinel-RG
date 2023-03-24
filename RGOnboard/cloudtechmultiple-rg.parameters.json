@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "Cloudtech Lighthouse RG management"
+        },
+        "mspOfferDescription": {
+            "value": "A service to manage sentinel"
+        },
+        "managedByTenantId": {
+            "value": "e07830a2-bcbb-4f4a-be65-a327c181f764"
+        },
+        "authorizations": {
+            "value": [
+                { 
+                    "principalId": "9757a193-540f-45b6-b409-c2f93675a443", 
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+                    "principalIdDisplayName": "Cloudtech-Lighthouse-ReadOnly" 
+                }, 
+                { 
+                    "principalId": "d404ab5b-c526-437c-8d26-57887ea85c20", 
+                    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46",
+                    "principalIdDisplayName": "Cloudtech-Lighthouse-msp-delete" 
+                },
+                {
+                    "principalId": "d44c0e87-5a8c-4f17-88e4-f5713ecae0d8",
+                    "principalIdDisplayName": "Cloudtech-Lighthouse-Admin",
+                    "roleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                    "delegatedRoleDefinitionIds": [
+                        "b24988ac-6180-42a0-ab88-20f7382dd24c",
+                        "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
+                    ]
+                }  
+                ]
+        },
+        "resourceGroups": {
+            "value": [
+                {
+                    "rgName": "RG-Sentinel-Workspace"
+                },
+                {
+                    "rgName": "RG-Sentinel-Playbooks"
+                }
+            ]
+        }
+    }
+}
