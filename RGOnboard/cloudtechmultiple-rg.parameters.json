@@ -40,7 +40,7 @@
                     "rgName": "RG-Sentinel-Workspace"
                 },
                 {
-                    "rgName": "RG-Sentinel-Playbooks"
+                    "rgName": "RG-Sentinel-Playbook"
                 }
             ]
         }
